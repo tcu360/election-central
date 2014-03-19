@@ -33,18 +33,26 @@ function initialize() {
               
               var name = rows[i][0];
               $('<h3 class="panel-title"></h3>').text(name).appendTo('.candidate-name');
-              
-              var committee = rows[i][1];
-              $('<span></span>').text(committee).appendTo('.candidate-committee');
-              
-              var classification = rows[i][2];
-              $('<span></span>').text(classification).appendTo('.candidate-classification');
-              
-              var legislation = rows[i][3];
-              $('<span></span>').text(legislation).appendTo('.candidate-legislation')
+              var $namevar = $('<h3 class="panel-title"></h3>');
+              $namevar.text(name).appendTo(panel + " .panel-heading");
               
               var photo = rows[i][4];
-              $('<img />').attr('src', photo).appendTo('.candidate-headshot');
+              var $photovar = $('<img />');
+              $photovar.attr('src', photo).appendTo(panel + " .panel-body");
+                          
+              var committee = rows[i][1];
+              var $committeevar = $('<div><span></span></div>');
+              $committeevar.text(committee).appendTo(panel + " .panel-body");
+              
+              var classification = rows[i][2];
+              var $classvar = $('<div><span></span></div>');
+              $classvar.text(classification).appendTo(panel + " .panel-body");
+              
+              var legislation = rows[i][3];
+              var $legislationvar = $('<div><span></span></div>');
+              $legislationvar.text(legislation).appendTo(panel + " .panel-body");
+              
+              
                             
             }
           }
