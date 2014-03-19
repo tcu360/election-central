@@ -1,3 +1,5 @@
+//Special thanks to Andrew Chavez for putting up with my endless questions during the development of this app
+
 function initialize() {
         var query = "SELECT Name, Committee, Classification, 'Legislation Authored', Photo FROM " +
             '1mQXVY2fdbKqduhwyRpzywqqnfdS27k2YnBXAP9NE';
