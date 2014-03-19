@@ -17,7 +17,20 @@ function initialize() {
           	console.log(data);
             var rows = data['rows'];
             var ftData = document.getElementById('ft-data');
+            
             for (var i in rows) {
+            	console.log(rows[i])
+            	              
+              var panel = "panel" + i;
+              
+              $('<div></div>').addClass('panel panel-default').appendTo('#panel-container').attr("id", panel);
+                                          
+              panel = '#' + panel;
+              
+              $('<div></div>').addClass('panel-heading').appendTo(panel);
+              
+              $('<div></div>').addClass('panel-body').appendTo(panel);
+              
               var name = rows[i][0];
               $('<h3 class="panel-title"></h3>').text(name).appendTo('.candidate-name');
               
