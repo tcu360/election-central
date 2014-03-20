@@ -36,7 +36,7 @@ function initialize() {
               //Create panel body for candidate info
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
-              //Place panels in a div that allows it to function inside the Bootstrap grid
+              //Wrap panels in a div that allows it to function inside the Bootstrap grid
               $(panel).wrap('<div class="col-lg-4"></div>');
               
               var name = rows[i][0];
