@@ -48,7 +48,7 @@ function initialize() {
               
               var photo = rows[i][4];
               var $photovar = $('<img />');
-              $photovar.attr('src', photo).appendTo(panel + " .panel-body");
+              $photovar.attr("src", "img/" + photo).width('200').height('200').appendTo(panel + " .panel-body");
                           
               var committee = rows[i][1];
               var $committeevar = $('<div><span></span></div>');
