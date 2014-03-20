@@ -43,6 +43,9 @@ function initialize() {
               var $namevar = $('<h3 class="panel-title"></h3>');
               $namevar.text(name).appendTo(panel + " .panel-heading");
               
+              	//Place FontAwesome Double Angle Right icon after candidate name 
+              	$("<i class='fa fa-angle-double-right'></i>").appendTo($namevar);
+              
               var photo = rows[i][4];
               var $photovar = $('<img />');
               $photovar.attr('src', photo).appendTo(panel + " .panel-body");
