@@ -25,11 +25,16 @@ function initialize() {
               var panel = "panel" + i;
               
               $('<div></div>').addClass('panel panel-default').appendTo('#panel-container').attr("id", panel);
+              //Create the panel and append it to div#panel-container
+              $('<div></div>').attr("id", panel).addClass('panel panel-default').appendTo('#panel-container');
                                           
               panel = '#' + panel;
               
+              //Create panel header for candidate name
               $('<div></div>').addClass('panel-heading').appendTo(panel);
               
+              
+              //Create panel body for candidate info
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
               var name = rows[i][0];
