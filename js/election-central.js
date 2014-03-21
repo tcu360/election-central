@@ -24,6 +24,8 @@ function initialize() {
             	              
               var panel = "panel" + i;
               
+              var candidateOffice = rows[i][6];
+              
               //Create the panel and append it to div#panel-container
               $('<div></div>').attr("id", panel).addClass('panel panel-default').appendTo('#panel-container');
                                           
