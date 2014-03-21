@@ -54,14 +54,13 @@ function initialize() {
               var $photovar = $('<img />');
               $photovar.attr({src: "img/" + photo}).addClass('img-responsive').insertBefore(panel + " .panel-heading");
               
-                          
               var committee = rows[i][1];
               var $committeevar = $('<div><span></span></div>');
               $committeevar.text(committee).appendTo(panel + " .panel-body");
               
               var classification = rows[i][2];
               var $classvar = $('<div><span></span></div>');
-              $classvar.text(classification).appendTo(panel + " .panel-body");
+              $classvar.text("Classification: " + classification).appendTo(panel + " .panel-body");
               
               var legislation = rows[i][3];
               var $legislationvar = $('<div><span></span></div>');
