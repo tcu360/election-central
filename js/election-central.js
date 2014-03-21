@@ -62,11 +62,28 @@ function initialize() {
               var legislation = rows[i][3];
               var $legislationvar = $('<div><span></span></div>');
               $legislationvar.text(legislation).appendTo(panel + " .panel-body");
-              
-              
+               
                             
             }
           }
         });
         
-      }      
+      } 
+
+
+$('.navfilter li').click(function () {
+	var officeFilter = $(this).text();
+	
+	$("#panel-container .panel").show();
+	
+	$("#panel-container .panel").each(function() {
+		if ($(this).data('office') != officeFilter) { //conditional
+			$(this).hide(); 
+			
+		}
+	});
+	
+	console.log(officeFilter);
+
+});
+
