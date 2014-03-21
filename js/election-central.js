@@ -1,5 +1,7 @@
 //Special thanks to Andrew Chavez for putting up with my endless questions during the development of this app
 
+
+
 function initialize() {
         var query = "SELECT Name, Committee, Classification, 'Legislation Authored', Photo, Position, Office FROM " +
             '1mQXVY2fdbKqduhwyRpzywqqnfdS27k2YnBXAP9NE';
@@ -29,9 +31,13 @@ function initialize() {
               var candidateOffice = rows[i][6];
               
               //Create the panel and append it to div#panel-container
-              $('<div></div>').attr("id", panel).addClass('panel panel-default').appendTo('#panel-container');
-                                          
-              panel = '#' + panel;
+              $('<div></div>').attr({"id": panel, "data-office": candidateOffice}).addClass('panel panel-default').appendTo('#panel-container');
+              
+              panel = '#' + panel; //What does this do again?
+              
+              $(panel).data("office", candidateOffice);
+              
+              var office = "office" + i;                  
               
               //Create panel header for candidate name
               $('<div></div>').addClass('panel-heading').appendTo(panel);
