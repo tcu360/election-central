@@ -60,15 +60,18 @@ function initialize() {
               
               var committee = rows[i][1];
               var $committeevar = $('<div><span></span></div>');
-              $committeevar.text(committee).appendTo(panel + " .panel-body");
+              $committeevar.text("Office seeking: " + committee).appendTo(panel + " .panel-body");
               
               var classification = rows[i][2];
               var $classvar = $('<div><span></span></div>');
               $classvar.text("Classification: " + classification).appendTo(panel + " .panel-body");
               
               var legislation = rows[i][3];
-              var $legislationvar = $('<div><span></span></div>');
+              var $legislationvar = $("<div><span></span></div>");
               $legislationvar.text(legislation).appendTo(panel + " .panel-body");
+              
+              
+              
                
                             
             }
