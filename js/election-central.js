@@ -46,7 +46,6 @@ function initialize() {
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
               //Wrap panels in a div that allows it to function inside the Bootstrap grid
-              $(panel).wrap('<div class="col-lg-4 col-md-4 item"></div>');
               
               var name = rows[i][0];
               var $namevar = $('<h3 class="panel-title"></h3>');
@@ -91,19 +90,11 @@ $('.navfilter li').click(function () {
 	
 	$("#panel-container .panel").each(function() {
 		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
-			$(this).hide(); 
-			
 		}
 	});
 
-});
 
-//Implement Masonry.js
-var $container = $('#panel-container');
-
-$container.imagesLoaded( function(){
   $container.masonry({
     itemSelector : '.item'
   });
 });
-
