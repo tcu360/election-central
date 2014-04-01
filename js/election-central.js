@@ -45,7 +45,7 @@ function initialize() {
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
               //Wrap panels in a div that allows it to function inside the Bootstrap grid
-              $(panel).wrap('<div class="col-lg-4"></div>');
+              $(panel).wrap('<div class="col-lg-4 col-md-4 grid-item"></div>');
               
               var name = rows[i][0];
               var $namevar = $('<h3 class="panel-title"></h3>');
