@@ -23,7 +23,6 @@ function initialize() {
             var rows = data['rows'];
             
             for (var i in rows) {
-            	console.log(rows[i])
             	              
               var panel = "panel" + i;
               
@@ -46,7 +45,7 @@ function initialize() {
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
               //Wrap panels in a div that allows it to function inside the Bootstrap grid
-              $(panel).wrap('<div class="col-lg-4 col-md-4 item"></div>').addClass(office);
+              $(panel).wrap('<div class="col-lg-4 col-md-4 item"></div>');
               
               var name = rows[i][0];
               var $namevar = $('<h3 class="panel-title"></h3>');
@@ -94,18 +93,19 @@ function initialize() {
 //Create filters
 
 $('.navfilter li').click(function () {
-	var officeFilter = $(this).text();
+	var officeFilter = $(this).find("a").data('office');
 	
-	$("#panel-container .item").show();
-	
-	$("#panel-container .panel").each(function() {
-		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
-			$(this).parent().hide(); 
-	
+	$container.isotope({
+		filter: function () {
+		if ($(this).find('.panel').data('office') != officeFilter) {
+			return false;
 		}
+		else { 
+			return true;
+		}
+	}
+	
 	});
-
-	$container.isotope({ filter: office });
 		
 	
 	return false;
