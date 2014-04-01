@@ -91,7 +91,6 @@ $('.navfilter li').click(function () {
 	$("#panel-container .panel").each(function() {
 		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
 			$(this).hide(); 
-			$(this).document.title = "office"; 
 			
 		}
 	});
@@ -101,4 +100,11 @@ $('.navfilter li').click(function () {
 });
 
 //Implement Masonry.js
+var $container = $('#panel-container');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.item'
+  });
+});
 
