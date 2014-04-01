@@ -38,8 +38,8 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/election.less",
 		"outputAbbreviatedPath": "\/css\/election.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -65,6 +65,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/election-central-fb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23921,
+		"inputAbbreviatedPath": "\/img\/election-central-fb.png",
+		"outputAbbreviatedPath": "\/img\/election-central-fb.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/election-central.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -72,6 +82,16 @@
 		"initialSize": 21318,
 		"inputAbbreviatedPath": "\/img\/election-central.png",
 		"outputAbbreviatedPath": "\/img\/election-central.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/photo-unavailable.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81279,
+		"inputAbbreviatedPath": "\/img\/photo-unavailable.jpg",
+		"outputAbbreviatedPath": "\/img\/photo-unavailable.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -99,6 +119,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/election-central.js",
 		"outputAbbreviatedPath": "\/js\/min\/election-central-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/masonry.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/masonry.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/masonry.min-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/masonry.pkgd.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/masonry.pkgd.js",
+		"outputAbbreviatedPath": "\/js\/min\/masonry.pkgd-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -1428,6 +1468,46 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon-120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7988,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-120.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-120.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8189,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-152.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-152.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon-76.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4480,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-76.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-76.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3420,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/riffstrap\/js\/bootstrap.js": {
 		"fileType": 64,
