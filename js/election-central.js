@@ -86,7 +86,6 @@ function initialize() {
 $('.navfilter li').click(function () {
 	var officeFilter = $(this).text();
 	
-	$("#panel-container .panel").show();
 	
 	$("#panel-container .panel").each(function() {
 		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
@@ -94,7 +93,4 @@ $('.navfilter li').click(function () {
 	});
 
 
-  $container.masonry({
-    itemSelector : '.item'
-  });
 });
