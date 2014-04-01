@@ -69,9 +69,6 @@ function initialize() {
               var legislation = rows[i][3];
               var $legislationvar = $("<div><span></span></div>");
               $legislationvar.text(legislation).appendTo(panel + " .panel-body");
-              
-              
-              
                
                             
             }
@@ -101,10 +98,3 @@ $('.navfilter li').click(function () {
 
 //Implement Masonry.js
 
-$(document).ready(function() {
-  $('#panel-container').masonry({
-   itemSelector: '.grid-item'
-  }).imagesLoaded(function() {
-   $('#panel-container').masonry('reload');
-  });
-});
