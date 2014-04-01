@@ -18,7 +18,6 @@ function initialize() {
           url: url.join(''),
           dataType: 'jsonp',
           success: function (data) {
-          	console.log(data);
             var rows = data['rows'];
             
             for (var i in rows) {
@@ -94,8 +93,6 @@ $('.navfilter li').click(function () {
 			
 		}
 	});
-	
-	console.log(officeFilter);
 
 });
 
