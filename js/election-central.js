@@ -46,6 +46,7 @@ function initialize() {
               $('<div></div>').addClass('panel-body').appendTo(panel);
               
               //Wrap panels in a div that allows it to function inside the Bootstrap grid
+              $(panel).wrap('<div class="col-lg-4 col-md-4 item"></div>').addClass(office);
               
               var name = rows[i][0];
               var $namevar = $('<h3 class="panel-title"></h3>');
@@ -76,6 +77,15 @@ function initialize() {
                
                             
             }
+			//Implement Isotope.js
+			$container = $('#panel-container');
+			
+			$container.imagesLoaded( function(){
+			  $container.isotope({
+			    itemSelector: '.item',
+			    layoutMode: 'fitRows'
+			  });
+			});
           }
         });
         
@@ -86,11 +96,18 @@ function initialize() {
 $('.navfilter li').click(function () {
 	var officeFilter = $(this).text();
 	
+	$("#panel-container .item").show();
 	
 	$("#panel-container .panel").each(function() {
 		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
+			$(this).parent().hide(); 
+	
 		}
 	});
 
+	$container.isotope({ filter: office });
+		
+	
+	return false;
 
 });
