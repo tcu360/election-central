@@ -88,8 +88,9 @@ $('.navfilter li').click(function () {
 	$("#panel-container .panel").show();
 	
 	$("#panel-container .panel").each(function() {
-		if ($(this).data('office') != officeFilter) { //conditional
+		if ($(this).data('office') != officeFilter) { //conditional //here is where I'll set the Document title based off the office variable
 			$(this).hide(); 
+			$(this).document.title = "office"; 
 			
 		}
 	});
