@@ -27,6 +27,7 @@ function initialize() {
               var panel = "panel" + i;
               
               var candidateOffice = rows[i][6];
+              	
               
               //Create the panel and append it to div#panel-container, add data attribute for filtering. 
               $('<div></div>').attr({"id": panel, "data-office": candidateOffice}).addClass('panel panel-default').appendTo('#panel-container');
