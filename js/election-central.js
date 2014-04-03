@@ -99,6 +99,9 @@ $('.navfilter li').click(function () {
 	$('.navfilter li').removeClass('active');
 	$(this).addClass('active');
 	
+	//Close dropdown when filter is clicked
+	$('[data-toggle="dropdown"]').parent().removeClass('open');
+	
 	$(document).attr('title', officeFilter + " | Voter's Guide: 2014 SGA Elections | TCU 360"); //Set page title to candidate office on click
 	
 	$container.isotope({
