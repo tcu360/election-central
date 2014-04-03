@@ -94,6 +94,11 @@ function initialize() {
 
 $('.navfilter li').click(function () {
 	var officeFilter = $(this).find("a").data('office');
+	
+	// Apply Bootstrap's active class to filters 
+	$('.navfilter li').removeClass('active');
+	$(this).addClass('active');
+	
 	$(document).attr('title', officeFilter + " | Voter's Guide: 2014 SGA Elections | TCU 360"); //Set page title to candidate office on click
 	
 	$container.isotope({
