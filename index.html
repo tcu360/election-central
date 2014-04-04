@@ -181,9 +181,25 @@
 
   	</div>
   	
-    <footer>
+    <footer class="static-app-footer">
       <div class="container">
-        <p>&copy; TCU 360</p>
+        <span>&copy; TCU 360</span> <span><button class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#theTeam">Credits</button></span>
+        
+		<!--  -->
+		<div class="modal fade" id="theTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Development Team</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>The Voter's Guide to the 2014 SGA Election was created by <a href="http://twitter.com/richardescobedo">Richard Escobedo</a>.</p>
+		        <p>If you'd like to contribute to this project, you can <a href="http://github.com/tcu360/election-central">fork it</a> on Github.</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
       </div>
     </footer>
     
