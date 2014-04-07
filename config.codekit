@@ -1500,6 +1500,50 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/riffstrap\/img\/apple-touch-icon-120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7988,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-120.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8189,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-152.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon-76.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4480,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-76.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon-76.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/riffstrap\/img\/apple-touch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3420,
+		"inputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon.png",
+		"outputAbbreviatedPath": "\/riffstrap\/img\/apple-touch-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/riffstrap\/js\/bootstrap.js": {
 		"fileType": 64,
 		"ignore": 0,
