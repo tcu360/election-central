@@ -96,7 +96,7 @@ function initialize() {
 $('.navfilter li').click(function () {
 	var officeFilter = $(this).find("a").data('office');
 		
-	$('#office-label').text(officeFilter);
+	$('#office-label').text(officeFilter); //Add selected office to page header
 	
 	// Apply Bootstrap's active class to filters 
 	$('.navfilter li').removeClass('active');
