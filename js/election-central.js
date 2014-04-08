@@ -107,6 +107,7 @@ $('.navfilter li').click(function () {
 	
 	$(document).attr('title', officeFilter + " | Voter's Guide: 2014 SGA Elections | TCU 360"); //Set page title to candidate office on click
 	
+	//Filter with Isotope
 	$container.isotope({
 		filter: function () {
 		if ($(this).find('.panel').data('office') != officeFilter) {
