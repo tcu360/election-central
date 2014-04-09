@@ -1,6 +1,31 @@
-//Special thanks to Andrew Chavez for putting up with my endless questions during the development of this app
+/*
+ _____ ____ _   _   _____  __    ___  
+|_   _/ ___| | | | |___ / / /_  / _ \ 
+  | || |   | | | |   |_ \| '_ \| | | |
+  | || |___| |_| |  ___) | (_) | |_| |
+  |_| \____|\___/  |____/ \___/ \___/ 
+                                    
+ * Project Weasel
+ * TCU 360 Voter's Guide
+ * Version 1.0
+ * http://elections.tcu360.com
+ * Built by Richard Escobedo
+ ------------------------------------------------------------------
+  This is a simple app to display SGA candidates on the interwebs.
+ ------------------------------------------------------------------
+ * A very special thanks to Andrew Chavez for putting up 
+ * with my endless questions during the development of this app.
+ */
+ 
 
-var $container;
+/*
+------------------------------------------------------
+Start talking to Google and manipulating the DOM
+------------------------------------------------------
+*/
+
+var $container; // Define this variable outside the initialize function
+
 
 function initialize() {
         var query = "SELECT Name, Committee, Classification, 'Legislation Authored', Photo, Position, Office FROM " +
@@ -91,7 +116,11 @@ function initialize() {
         
       } 
 
-//Create filters
+/*
+-------------------------------------------------------
+Create office filters and maniuplate the DOM some more
+-------------------------------------------------------
+*/
 
 $('.navfilter li').click(function () {
 	var officeFilter = $(this).find("a").data('office');
